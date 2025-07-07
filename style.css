@@ -41,12 +41,26 @@ body{
 
 .sidebar li{
     padding: 1rem;
+    vertical-align: text-top;
 }
 
 .content{
     background-color:cadetblue;
     grid-column: 2/3;
     grid-row: 3/-1;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card{
+    background-color: bisque;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .rightbar{
