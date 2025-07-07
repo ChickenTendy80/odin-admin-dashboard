@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-columns: 1fr 8fr;
+}
+
+.header{
+    background-color: aquamarine;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.sidebar{
+    background-color: azure;
+    grid-column: 1;
+    grid-row: 1/-1;
+}
+
+.content{
+    background-color:cadetblue;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
