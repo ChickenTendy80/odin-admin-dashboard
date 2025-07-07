@@ -21,11 +21,12 @@ body{
     padding: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: azure;
 }
 
 .logo img{
     align-self: center;
-    justify-self: start;
+    justify-self: center;
     width: 48px; 
     height: auto
 }
@@ -40,11 +41,60 @@ body{
 .search{
     grid-column: 2/4;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 2fr;
+}
+
+.search img{
+    width: 24px;
+    height: auto;
+    place-self: center;
+}
+
+img .magnify{
+    justify-self: left;
+}
+
+img .profile-logo{
+    width: 100px;
+    height: auto;
+}
+
+.search p{
+    font-size: 1.25em;
+    font-weight: 700;
+    place-self: center;
+}
+
+.search .bar{
+    justify-self: left;
+    align-self: center;
+    width: 80vh;
+    height: 30px;
+    background-color: grey;
+    border-radius: 8px;
+
 }
 
 .name{
     grid-column: 2/4;
     grid-row: 2;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    place-content: center;
+}
+
+.name .main{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.name button{
+    border-radius: 8px;
+    width: 20vh;
+    height: 10vh;
+    background-color: aqua;
 }
 
 .sidebar{
@@ -75,8 +125,8 @@ body{
 
 .card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
-    grid-template-rows: repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
     gap: 16px;
 }
 
