@@ -9,10 +9,13 @@ ul{
 
 body{
     display: grid;
-    grid-template-rows: 1fr 1.5fr 8fr;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-columns: 1fr 4fr 1fr;
     height: 100vh;
-    gap: 4px;
+}
+
+.main{
+    font-weight: 700;
 }
 
 .logo{
@@ -20,8 +23,9 @@ body{
     grid-row: 1;
     padding: 8px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: azure;
+    grid-template-columns: 1fr 2fr;
+    background-color: #7fa99b;
+    color: black;
 }
 
 .logo img{
@@ -34,7 +38,7 @@ body{
 .logo p{
     align-self:center;
     justify-self: start;
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -82,7 +86,17 @@ img .profile-logo{
     padding: 8px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
-    place-content: center;
+    background-color: #fdc57b;
+}
+
+.name img{
+    width: 48px;
+    height: auto;
+    place-self: center;
+}
+
+.name div{
+    align-self: center;
 }
 
 .name .main{
@@ -92,13 +106,16 @@ img .profile-logo{
 
 .name button{
     border-radius: 8px;
-    width: 20vh;
-    height: 10vh;
-    background-color: aqua;
+    width: 10vh;
+    height: 5vh;
+    place-self: center;
+    background-color: #7fa99b;
+    color: #fbf2d5;
 }
 
 .sidebar{
-    background-color: azure;
+    background-color: #7fa99b;
+    color: #394a51;
     grid-column: 1;
     grid-row: 2/4;
     display: grid;
@@ -117,10 +134,10 @@ img .profile-logo{
 }
 
 .content{
-    background-color:cadetblue;
+    background-color: #394a51;
     grid-column: 2/3;
     grid-row: 3/-1;
-    padding: 8px;
+    padding: 12px;
 }
 
 .card-container{
@@ -131,14 +148,44 @@ img .profile-logo{
 }
 
 .card{
-    background-color: bisque;
+    background-color: #fbf2d5;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.card .right{
+    text-align: right;
+}
+
+.card img{
+    width: 24px;
+    height: auto;
 }
 
 .rightbar{
+    padding: 8px;
     grid-column: 3;
     grid-row: 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: 1fr 8fr 1fr 8fr;
+    gap: 4px;
+    background-color: #394a51;
+}
+
+.rightbar p{
+    color: #fdc57b; 
+    font-weight: 700;
+}
+
+.rightbar .announcement, .trending{
+    background-color: #fbf2d5;
+    color: #7fa99b;
+    border-radius: 8px;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 8px;
+}
+
+.rightbar .main{
+    color: #394a51;
 }
