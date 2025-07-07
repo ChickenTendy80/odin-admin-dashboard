@@ -18,6 +18,23 @@ body{
 .logo{
     grid-column: 1;
     grid-row: 1;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo img{
+    align-self: center;
+    justify-self: start;
+    width: 48px; 
+    height: auto
+}
+
+.logo p{
+    align-self:center;
+    justify-self: start;
+    font-size: 1.75em;
+    font-weight: 700;
 }
 
 .search{
@@ -41,21 +58,26 @@ body{
 
 .sidebar li{
     padding: 1rem;
-    vertical-align: text-top;
+}
+
+.sidebar img{
+    width: 24px; 
+    height: 24px; 
+    vertical-align:middle;
 }
 
 .content{
     background-color:cadetblue;
     grid-column: 2/3;
     grid-row: 3/-1;
+    padding: 8px;
 }
 
 .card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 4fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 2fr));
-    gap: 8px;
-    align-self: stretch;
+    gap: 16px;
 }
 
 .card{
