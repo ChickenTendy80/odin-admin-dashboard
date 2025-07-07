@@ -149,7 +149,7 @@ img .profile-logo{
 
 .card{
     background-color: #fbf2d5;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: #fdc57b -5px 5px;
     padding: 8px;
     border-radius: 8px;
     display: grid;
