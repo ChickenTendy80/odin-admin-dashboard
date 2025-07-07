@@ -152,6 +152,8 @@ img .profile-logo{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 8px;
     border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 .card .right{
@@ -176,6 +178,7 @@ img .profile-logo{
 .rightbar p{
     color: #fdc57b; 
     font-weight: 700;
+    font-size: 1.25em;
 }
 
 .rightbar .announcement, .trending{
@@ -183,7 +186,7 @@ img .profile-logo{
     color: #7fa99b;
     border-radius: 8px;
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 8px;
+    padding: 12px;
 }
 
 .rightbar .main{
