@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 ul{
@@ -10,24 +9,50 @@ ul{
 
 body{
     display: grid;
-    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
-    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1.5fr 8fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 100vh;
+    gap: 4px;
 }
 
-.header{
-    background-color: aquamarine;
-    grid-column: 2;
+.logo{
+    grid-column: 1;
     grid-row: 1;
+}
+
+.search{
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+.name{
+    grid-column: 2/4;
+    grid-row: 2;
 }
 
 .sidebar{
     background-color: azure;
     grid-column: 1;
-    grid-row: 1/-1;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.sidebar li{
+    padding: 1rem;
 }
 
 .content{
     background-color:cadetblue;
-    grid-column: 2/-1;
-    grid-row: 2/-1;
+    grid-column: 2/3;
+    grid-row: 3/-1;
+}
+
+.rightbar{
+    grid-column: 3;
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
