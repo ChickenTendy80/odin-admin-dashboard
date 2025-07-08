@@ -143,8 +143,9 @@ img .profile-logo{
 .card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-rows: repeat(auto-fit,minmax(100px, 1fr));
     gap: 16px;
+    height:90%
 }
 
 .card{
